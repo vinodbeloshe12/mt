@@ -49,7 +49,7 @@ ul.Menu li a {
   visibility: visible;
 }
 
-li.cart span {
+li.cart .count {
   position: absolute;
   top: -11px;
   font-size: 11px;
@@ -80,22 +80,36 @@ li.cart span {
   text-align: left;
   /* border: 1px solid #20224a; */
   margin: 0px;
-  padding: 0px;
+  padding: 15px;
   right: -15px;
   top: 44px;
   border-radius: 0px 0px 5px 5px;
-  box-shadow: 0px 0px 5px 0px #c5c5c5;
+  box-shadow: 0px 4px 8px 0px #c5c5c5;
 }
 
-ul.cartDrpDown li {
+.cartDrpDown ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cartDrpDown ul li {
   display: block !important;
   margin: 0;
-  padding: 0px 15px;
+  padding: 0px;
 }
 
-ul.cartDrpDown li a {
+.cartDrpDown ul li a {
   display: block;
   font-size: 14px;
   color: #20224a;
   padding: 7px 0px;
+}
+
+.cartDrpDown ul li .thumb {
+  width: 80px;
+}
+
+.cartDrpDown ul li .cartProDetails {
+  width: 100%;
+  font-size: 14px;
 }
