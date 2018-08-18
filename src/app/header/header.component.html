@@ -1,4 +1,4 @@
-<div class="container-fluid header">
+<header class="container-fluid header">
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
@@ -15,19 +15,28 @@
             <i class="fas fa-shopping-basket"></i>
             <div class="cartDrpDown">
               <h4>Shopping Cart</h4>
-              <ul>
+              <ul class="cartBox">
                 <li>
-                  <a href="" class="thumb">
-                    <img class="img-fluid" src="http://susindhufashion.com/assets/media/slider-tumbnails/main/2.png" alt="">
+                  <a class="close-cart">
+                    <i class="fa fa-times-circle"></i>
                   </a>
-                  <span class="cartProDetails">
-                    <p>Product 1 title for testing</p>
-                    <span class="qty">1 X 555</span>
-                    <a href="">
-                      Remove
+                  <div class="media">
+                    <a class="pull-left">
+                      <img alt="Ambar" class="img-fluid" src="http://susindhufashion.com/assets/media/slider-tumbnails/main/2.png">
                     </a>
-                  </span>
-
+                    <div class="media-body">
+                      <span>
+                        <a>Black African Print Skirt</a>
+                      </span>
+                      <p class="cart-price">$14.99</p>
+                      <div class="product-qty">
+                        <label>Qty:</label>
+                        <div class="custom-qty">
+                          <input type="text" name="qty" maxlength="8" value="1" title="Qty" class="input-text qty">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li>
                   <a href="" class="thumb">
@@ -45,9 +54,11 @@
               </ul>
             </div>
 
+
+
           </li>
         </ul>
       </div>
     </div>
   </div>
-</div>
+</header>
