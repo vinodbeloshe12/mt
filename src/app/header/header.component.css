@@ -19,7 +19,7 @@ ul.Menu {
 ul.Menu li {
   display: inline-block;
   margin-left: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 ul.Menu li a {
@@ -41,9 +41,13 @@ ul.Menu li a {
 
 .Menu li.cart {
   font-size: 22px;
-  color: #c39300;
   margin-top: 3px;
   position: relative;
+}
+
+.cart .fa-shopping-basket {
+  color: #c39300;
+  cursor: pointer;
 }
 
 .Menu li.cart:hover>.cartDrpDown {
@@ -55,6 +59,7 @@ ul.Menu li a {
 
 li.cart .count {
   position: absolute;
+  cursor: pointer;
   top: -11px;
   font-size: 11px;
   left: 2px;
@@ -73,12 +78,13 @@ li.cart .count {
   transition: all 0.5s;
   opacity: 0;
   z-index: 9;
+  color: #313131;
   overflow: hidden;
   visibility: hidden;
   -webkit-transform: translateY(30px);
   transform: translateY(30px);
   width: 350px;
-  max-height: 400px;
+  max-height: 480px;
   height: auto;
   background-color: #ffffff;
   position: absolute;
@@ -86,38 +92,85 @@ li.cart .count {
   text-align: left;
   /* border: 1px solid #20224a; */
   margin: 0px;
-  padding: 15px;
+  padding: 15px 25px;
   right: -15px;
   top: 44px;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 4px 8px 0px #c5c5c5;
 }
 
+h4.title {
+  color: #deaa1c;
+  margin-bottom: 15px;
+}
+
 ul.cartBox {
   margin: 0;
   padding: 0;
-  height: 350px;
+  max-height: 300px;
+  height: auto;
+  /* overflow: hidden; */
   overflow-y: scroll;
 }
 
 ul.cartBox li {
-  display: block !important;
-  margin: 0;
+  margin: 6px 0px;
   padding: 0px;
 }
 
-ul.cartBox li a {
-  display: block;
-  font-size: 14px;
-  color: #20224a;
-  padding: 7px 0px;
+ul.cartBox li .thumb {
+  width: 29%;
+  display: inline-block;
+  float: left;
 }
 
-ul.cartBox li .thumb {
-  width: 80px;
+ul.cartBox li .thumb img {
+  width: 100%;
+  /* border: 1px solid #ccc; */
 }
 
 ul.cartBox li .cartProDetails {
-  width: 100%;
+  width: 70%;
   font-size: 14px;
+  padding: 0 15px;
+  display: inline-block;
+  float: left;
+}
+
+.cartProDetails .protitle {
+  display: block;
+  /* font-weight: 600; */
+  font-size: 15px;
+  color: #20224a;
+  padding: 0 0 5px 0px;
+}
+
+.cartProDetails .removefromCart {
+  width: 100%;
+  float: left;
+  color: #da0808;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.cartDrpDown .subtotal {
+  margin: 10px 0px;
+  border-top: 1px solid #cccccc59;
+  border-bottom: 1px solid #cccccc59;
+  padding: 5px 0px;
+}
+
+.cartDrpDown .subtotal span {
+  float: right;
+  color: #21234a;
+  padding-right: 5px;
+}
+
+.cartDrpDown .cartbtns button {
+  padding: 5px 25px;
+  margin: 5px 13px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #a3a4ab;
+  cursor: pointer;
 }

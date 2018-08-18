@@ -38,3 +38,12 @@ h6 {
   height: 6px;
   background: #ffffff;
 }
+
+.pgCont {
+  padding: 40px 0px;
+}
+
+.pgCont h4 {
+  color: red;
+  margin-bottom: 25px;
+}
