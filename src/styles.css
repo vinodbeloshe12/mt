@@ -40,10 +40,14 @@ h6 {
 }
 
 .pgCont {
-  padding: 40px 0px;
+  padding: 90px 0px;
 }
 
 .pgCont h4 {
-  color: red;
+  color: #fdbe01;
   margin-bottom: 25px;
+  font-weight: 500;
+  padding: 4px 0px;
+  font-size: 30px;
+  border-bottom: 1px solid #ddd;
 }
