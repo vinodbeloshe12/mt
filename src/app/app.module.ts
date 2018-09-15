@@ -1,34 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SwiperModule } from 'ngx-swiper-wrapper';
-import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './app-routing.module';
 
+import { AppRouterModule } from './app-router.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { ShopComponent } from './shop/shop.component';
+import { DetailsComponent } from './details/details.component';
+import { CartComponent } from './cart/cart.component';
 
-const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
-  direction: 'horizontal',
-  slidesPerView: 'auto'
-};
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     HeaderComponent,
-    HomeComponent
+    FooterComponent,
+    ShopComponent,
+    DetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
-    SwiperModule,
-    AppRoutingModule
+    AppRouterModule
   ],
-  providers: [{
-    provide: SWIPER_CONFIG,
-    useValue: DEFAULT_SWIPER_CONFIG
-  }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

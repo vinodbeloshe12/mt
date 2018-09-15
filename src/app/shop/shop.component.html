@@ -1,0 +1,265 @@
+<div class="wrapper">
+  <div class="page-wrapper">
+
+
+
+    <!--Breadcrumb Start-->
+    <div class="breadcrumb-Area mt-50 mb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="breadcrumb-content">
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="active">Shop</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Breadcrumb End-->
+
+    <!--Shop Area Start-->
+    <div class="shop-area mb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 order-2 order-lg-1">
+
+            <!--Color Category Widget Start-->
+            <div class="shop-sidebar">
+              <h4>Color</h4>
+              <div class="shop-categorie">
+                <ul>
+                  <li>
+                    <a href="#">Gold</a>
+                    <span class="cate-count">(14)</span>
+                  </li>
+                  <li>
+                    <a href="#">Green</a>
+                    <span class="cate-count">(14)</span>
+                  </li>
+                  <li>
+                    <a href="#">White</a>
+                    <span class="cate-count">(14)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Color Category Widget End-->
+            <!--Price Filter Widget Start-->
+            <div class="shop-sidebar">
+              <h4>Filter by price</h4>
+              <div class="price-filter">
+                <div id="slider-range"></div>
+                <div class="price-slider-amount">
+                  <div class="label-input">
+                    <label>price : </label>
+                    <input type="text" id="amount" name="price" placeholder="Add Your Price" />
+                  </div>
+                  <button type="button">Filter</button>
+                </div>
+              </div>
+            </div>
+            <!--Price Filter Widget End-->
+            <!--Recent Product Widget Start-->
+            <div class="shop-sidebar">
+              <h4>Top Rated Products</h4>
+              <div class="rc-product">
+                <ul>
+                  <li>
+                    <div class="rc-product-thumb img-full">
+                      <a href="single-product.html">
+                        <img src="img/product/product32.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="rc-product-content">
+                      <h6>
+                        <a href="single-product.html">Kaoreet lobortis</a>
+                      </h6>
+                      <div class="rc-product-price">
+                        <span class="price">$95.00</span>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <!--Recent Product Widget End-->
+            <!--Compare Widget Start-->
+            <div class="shop-sidebar">
+              <h4>Compare</h4>
+              <div class="compare-products-list">
+                <ul>
+                  <li>
+                    <a href="#" class="title">Cras neque metus</a>
+                    <a href="#" class="remove-compare">
+                      <i class="fa fa-close"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="title">Cras neque metus</a>
+                    <a href="#" class="remove-compare">
+                      <i class="fa fa-close"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="clear-btn">Clear all</a>
+              <a href="#" class="compare-btn">Compare</a>
+            </div>
+            <!--Compare Widget End-->
+            <!--Product Tags Widget Start-->
+            <div class="shop-sidebar">
+              <h4>Product Tags</h4>
+              <div class="product-tag-style">
+                <ul>
+                  <li>
+                    <a href="#">blouse</a>
+                  </li>
+                  <li>
+                    <a href="#">clothes</a>
+                  </li>
+                  <li>
+                    <a href="#">fashion</a>
+                  </li>
+                  <li>
+                    <a href="#">handbag</a>
+                  </li>
+                  <li>
+                    <a href="#">laptop</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Product Tags Widget End-->
+          </div>
+          <div class="col-lg-9 order-1 order-lg-2">
+            <div class="shop-layout">
+              <!--Grid & List View Start-->
+              <div class="shop-topbar-wrapper d-md-flex justify-content-md-between align-items-center">
+
+                <!--Toolbar Short Area Start-->
+                <div class="toolbar-short-area d-md-flex align-items-center">
+                  <div class="toolbar-shorter ">
+                    <label>Sort By:</label>
+                    <select class="wide">
+                      <option data-display="Select">Nothing</option>
+                      <option value="Relevance">Relevance</option>
+                      <option value="Name, A to Z">Name, A to Z</option>
+                      <option value="Name, Z to A">Name, Z to A</option>
+                      <option value="Price, low to high">Price, low to high</option>
+                      <option value="Price, high to low">Price, high to low</option>
+                    </select>
+                  </div>
+                  <p class="show-product">Showing 1–9 of 42 results</p>
+                </div>
+                <!--Toolbar Short Area End-->
+              </div>
+              <!--Grid & List View End-->
+              <!--Shop Product Start-->
+              <div class="shop-product">
+                <div id="myTabContent-2" class="tab-content">
+                  <div id="grid" class="tab-pane fade show active">
+                    <div class="product-grid-view">
+                      <div class="row no-gutters">
+                        <div class="col-md-4" *ngFor="let data of productData">
+                          <!--Single Product Start-->
+                          <div class="single-product">
+                            <div class="product-img img-full">
+                              <a href="single-product.html">
+                                <img src="{{data.image}}" alt="">
+                              </a>
+                              <div class="product-action">
+                                <ul>
+                                  <li>
+                                    <a href="#open-modal" data-toggle="modal" title="Quick view">
+                                      <i class="zmdi zmdi-eye"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i class="zmdi zmdi-favorite-outline"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <i class="zmdi zmdi-repeat"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="product-content">
+                              <!-- <div class="product-reviews">
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                              </div> -->
+                              <h4>
+                                <a href="single-product.html">{{data.name}}</a>
+                              </h4>
+                              <div class="product-price">
+                                <span class="price">
+                                  <i class="fa fa-inr"></i> {{data.price?data.price:data.msrp}}</span>
+                                <span *ngIf="data.price" class="regular-price">
+                                  <i class="fa fa-inr"></i> {{data.msrp}}</span>
+                              </div>
+                              <div class="add-cart-action">
+                                <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Single Product End-->
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Pagination Start-->
+                  <div class="product-pagination">
+                    <ul>
+                      <li class="active">
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#">4</a>
+                      </li>
+                      <li>
+                        <a href="#">5</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-angle-double-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Pagination End-->
+                </div>
+              </div>
+              <!--Shop Product End-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Shop Area End-->
+
+
+  </div>
+</div>
