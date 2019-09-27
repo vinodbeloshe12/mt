@@ -21,19 +21,19 @@
     </div>
     <!-- Main-search End -->
     <!--Slider Area Start-->
-    <div class="slider-area mb-30">
-      <div class="hero-slider owl-carousel">
+    <div class="slider-area">
+      <div class="hero-slider">
         <!--Single Slider Start-->
-        <div class="single-slider single-slider-2" data-dot="<span>01</span>" style="background-image:url(https://kemejapria.net/wp-content/uploads/2015/10/kemeja-pria-formal-modern.jpg);">
-          <div class="container">
+        <div class="single-slider single-slider-2" data-dot="<span>01</span>"
+          style="background-image:url(https://kemejapria.net/wp-content/uploads/2015/10/kemeja-pria-formal-modern.jpg);">
+          <div class="container-slider">
             <div class="slider-content2">
               <div class="slider-front-image">
-                <img src="https://1.bp.blogspot.com/-vedjxjm7QqU/WH3VSMzmc8I/AAAAAAAADHc/1l0Dcn6UHRMEFTQDZZgzhrwWd8_EN83wwCLcB/s1600/Freebak_0144%2BPartywearl%2BShirts.png"
-                  alt="">
+                <img src="assets/img/banner/banner1.jpg" alt="">
               </div>
-              <a class="shop-btn2" href="#">Shop now
+              <!-- <a class="shop-btn2" href="#">Shop now
                 <i class="fa fa-chevron-right"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -75,8 +75,10 @@
               <!--Section Title End-->
               <div class="about-content">
                 <h5>ECO - FRIENDLY GARMENTS OF PREMIER QUALITY </h5>
-                <p>The garment industry of India is second largest in the world and has been growing steadily over past few
-                  years. Men turning fashion conscious has led to increase in consumption creating growth in demand of garment
+                <p>The garment industry of India is second largest in the world and has been growing steadily over past
+                  few
+                  years. Men turning fashion conscious has led to increase in consumption creating growth in demand of
+                  garment
                   in the world.</p>
                 <ul>
                   <li>
@@ -84,8 +86,9 @@
                   <li>
                     <i class="zmdi zmdi-check"></i>Best sources in designing and manufacturing</li>
                 </ul>
-                <a href="#" class="about-btn">about us
+                <a href="#" class="about-btn">Read More
                   <i class="zmdi zmdi-chevron-right"></i>
+
                 </a>
               </div>
             </div>
@@ -105,11 +108,12 @@
                   <img src="assets/img/icon/deal-icon.png" alt="">
                 </p>
                 <h3>Hot Deals This Week</h3>
-                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis
+                <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
+                  humanitatis
                   per seacula quarta decima et quinta decima.</p>
-                <div class="countdown-sale" data-date="2018-09-12 00:00:00" style="max-width: 470px;"></div>
-                <br/>
-                <a class="shop-btn2" href="#">Shop Now
+                <!-- <div class="countdown-sale" data-date="2018-09-12 00:00:00" style="max-width: 470px;"></div> -->
+                <br />
+                <a class="shop-btn2" href="#">Know More
                   <i class="fa fa-chevron-right"></i>
                 </a>
               </div>
@@ -119,104 +123,448 @@
       </div>
     </div>
     <!--Deal Product Countdown Area End-->
-    <!--Featured Product Area Start-->
-    <div class="featured-product-area mb-95">
+    <!--Trending Product Area Start-->
+    <div class="trending-product-area mb-100">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <!--Section Title Start-->
-            <div class="section-title title-border3 ml-126">
+            <div class="section-title title-color size-style mb-35">
               <span>Our Products</span>
-              <h3>Featured Item.</h3>
+              <h3>Trending Item.</h3>
             </div>
             <!--Section Title End-->
           </div>
-          <!-- <div class="col-12">
-            <div class="product-tab-menu">
-              <ul class="nav">
-                <li>
-                  <a class="active" data-toggle="tab" href="#vegetables">Product1</a>
-                </li>
-                <li>
-                  <a data-toggle="tab" href="#fruits">Product2</a>
-                </li>
-               
-              </ul>
-            </div>
-          </div> -->
-          <div class="col-12">
-            <!--Shop Product Start-->
-            <div class="shop-product">
-              <div id="myTabContent-2" class="tab-content">
-                <div id="grid" class="tab-pane fade show active">
-                  <div class="product-grid-view">
-                    <div class="row no-gutters">
-                      <div class="col-md-3" *ngFor="let data of productData">
-                        <!--Single Product Start-->
-                        <div class="single-product">
-                          <div class="product-img img-full">
-                            <a href="single-product.html">
-                              <img src="{{data.image}}" alt="">
-                            </a>
-                            <div class="product-action">
-                              <ul>
-                                <li>
-                                  <a href="#open-modal" data-toggle="modal" title="Quick view">
-                                    <i class="zmdi zmdi-eye"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i class="zmdi zmdi-favorite-outline"></i>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i class="zmdi zmdi-repeat"></i>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="product-content">
-                            <!-- <div class="product-reviews">
-                              <i class="fa fa-star-o"></i>
-                              <i class="fa fa-star-o"></i>
-                              <i class="fa fa-star-o"></i>
-                              <i class="fa fa-star-o"></i>
-                              <i class="fa fa-star-o"></i>
-                            </div> -->
-                            <h4>
-                              <a href="single-product.html">{{data.name}}</a>
-                            </h4>
-                            <div class="product-price">
-                              <span class="price">
-                                <i class="fa fa-inr"></i> {{data.price?data.price:data.msrp}}</span>
-                              <span *ngIf="data.price" class="regular-price">
-                                <i class="fa fa-inr"></i> {{data.msrp}}</span>
-                            </div>
-                            <div class="add-cart-action">
-                              <a href="cart.html" class="add-cart-btn">Add To Cart</a>
-                            </div>
-                          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <div class="product-section">
+              <div class="product-slider-2">
+                <div class="product-group">
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product14.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
                         </div>
-                        <!--Single Product End-->
                       </div>
-
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Cillum dolore</a></h4>
+                        <div class="product-price">
+                          <span class="price">$68.00</span>
+                          <span class="regular-price">$75.00</span>
+                        </div>
+                      </div>
                     </div>
+                    <!--Single Product End-->
+                  </div>
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product18.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Consequuntur magni</a></h4>
+                        <div class="product-price">
+                          <span class="price">$80.00</span>
+                          <span class="regular-price">$89.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
                   </div>
                 </div>
-
-
+                <div class="product-group">
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product15.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Dolorum fuga</a></h4>
+                        <div class="product-price">
+                          <span class="price">$64.00</span>
+                          <span class="regular-price">$71.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
+                  </div>
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product19.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Mirum est notare</a></h4>
+                        <div class="product-price">
+                          <span class="price">$79.00</span>
+                          <span class="regular-price">$84.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
+                  </div>
+                </div>
               </div>
             </div>
-            <!--Shop Product End-->
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="section-product-banner">
+              <div class="section-product-img img-full">
+                <img src="assets/img/banner/home3-banner1.jpg" alt="">
+              </div>
+              <div class="section-product-text">
+                <h3>Panera</h3>
+                <h5>Sourdough Bread Bowl</h5>
+                <a href="#" class="shop-btn2 btn-color">Shop now <i class="fa fa-chevron-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Featured Product Area End-->
+    <!--Trending Product Area End-->
 
+    <!--Testimonial Area Start-->
+    <div class="testimonial-area testimonial-bg2 mb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-area">
+              <div class="testimonial-section-img">
+                <div class="testimonial-author">
+                  <div class="author-img">
+                    <img src="assets/img/testimonial/testimonial1.jpg" alt="">
+                  </div>
+                  <div class="author-title">
+                    <span>Jenifer Brown</span>
+                    <span class="title">Manager of AZ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slider slider-dot-color">
+                <!--Single Testimonial Start-->
+                <div class="single-testimonial">
+                  <div class="testimonial-content">
+                    <p>These guys have been absolutely outstanding. Perfect Themes and the best of
+                      all that you have many options to choose! Best Support team ever! Very fast
+                      responding! Thank you very much! I highly recommend this theme and these
+                      people!</p>
+                  </div>
+
+                </div>
+                <!--Single Testimonial End-->
+                <!--Single Testimonial Start-->
+                <!-- <div class="single-testimonial">
+                <div class="testimonial-content">
+                  <p>These guys have been absolutely outstanding. Perfect Themes and the best of
+                    all that you have many options to choose! Best Support team ever! Very fast
+                    responding! Thank you very much! I highly recommend this theme and these
+                    people!</p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-img">
+                    <img src="assets/img/testimonial/testimonial1.jpg" alt="">
+                  </div>
+                  <div class="author-title">
+                    <span>Jenifer Brown</span>
+                    <span class="title">Manager of AZ</span>
+                  </div>
+                </div>
+              </div> -->
+                <!--Single Testimonial End-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Testimonial Area End-->
+    <!--Trending Product Area Start-->
+    <div class="trending-product-area mb-95">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!--Section Title Start-->
+            <div class="section-title title-color size-style mb-35 text-right">
+              <span>Our Products</span>
+              <h3>Trending Item.</h3>
+            </div>
+            <!--Section Title End-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-6 order-2 order-lg-1">
+            <div class="section-product-banner">
+              <div class="section-product-img img-full">
+                <img src="assets/img/banner/home3-banner2.jpg" alt="">
+              </div>
+              <div class="section-product-text">
+                <h3>Bread</h3>
+                <h5>Sale 40% all off</h5>
+                <a href="#" class="shop-btn2 btn-color">Shop now <i class="fa fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 order-1 order-lg-2">
+            <div class="product-section">
+              <div class="product-slider-2">
+                <div class="product-group">
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product14.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Cillum dolore</a></h4>
+                        <div class="product-price">
+                          <span class="price">$68.00</span>
+                          <span class="regular-price">$75.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
+                  </div>
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product18.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Consequuntur magni</a></h4>
+                        <div class="product-price">
+                          <span class="price">$80.00</span>
+                          <span class="regular-price">$89.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
+                  </div>
+                </div>
+                <div class="product-group">
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product15.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Dolorum fuga</a></h4>
+                        <div class="product-price">
+                          <span class="price">$64.00</span>
+                          <span class="regular-price">$71.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
+                  </div>
+                  <div class="col-md-12">
+                    <!--Single Product Start-->
+                    <div class="single-product product-action-color">
+                      <div class="product-img img-full">
+                        <a href="single-product.html">
+                          <img src="assets/img/product/product19.jpg" alt="">
+                        </a>
+                        <div class="product-action">
+                          <ul>
+                            <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i
+                                  class="zmdi zmdi-eye"></i></a>
+                            </li>
+                            <!-- <li><a href="#"><i class="zmdi zmdi-favorite-outline"></i></a>
+                            </li> -->
+                            <!-- <li><a href="#"><i class="zmdi zmdi-repeat"></i></a></li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="add-cart-action">
+                          <a href="cart.html" class="add-cart-btn">Add To Cart</a>
+                        </div>
+                        <div class="product-reviews">
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                          <i class="fa fa-star-o"></i>
+                        </div>
+                        <h4><a href="single-product.html">Mirum est notare</a></h4>
+                        <div class="product-price">
+                          <span class="price">$79.00</span>
+                          <span class="regular-price">$84.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Single Product End-->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Trending Product Area End-->
 
 
 
